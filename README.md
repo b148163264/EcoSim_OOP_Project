@@ -27,16 +27,14 @@
 ### 遊戲執行 & 安裝方式
 ---
 - 本專題使用 C++ 開發，不需要安裝額外圖形套件。下載專案後，接著在專案資料夾中開啟終端機，使用 g++ 或 clang++ 進行編譯。編譯完成後執行程式，即可進入 EcoSim 生態模擬器的選單畫面。
-- 可以附上這段指令：g++ -std=c++17 main.cpp Entity.cpp Organism.cpp Plant.cpp Animal.cpp Resource.cpp World.cpp -o ecosim
-./ecosim
-- Mac 也可以使用：clang++ -std=c++17 main.cpp Entity.cpp Organism.cpp Plant.cpp Animal.cpp Resource.cpp World.cpp -o ecosim
-./ecosim
-- windows測試失敗可按以下步驟:
-- 1.確定路徑沒有中文名
-- 2.下載MSYS2，打開MSYS2 UCRT64輸入pacman -Syu，關掉重開輸入pacman -S mingw-w64-ucrt-x86_64-gcc
-- 3.環境變數path加入C:\msys64\ucrt64\bin
-- 4.開啟檔案後終端機輸入g++ -std=c++17 -finput-charset=UTF-8 -fexec-charset=BIG5 main.cpp Entity.cpp Organism.cpp Plant.cpp Animal.cpp Resource.cpp World.cpp -o ecosim.exe
-- 5.再輸入.\ecosim.exe
+
+- Mac：
+- 在終端機輸入clang++ -std=c++17 main.cpp Entity.cpp Organism.cpp Plant.cpp Animal.cpp Resource.cpp World.cpp -o ecosim./ecosim
+- windows:
+- 1.下載MSYS2，打開MSYS2 UCRT64輸入pacman -Syu，關掉重開輸入pacman -S mingw-w64-ucrt-x86_64-gcc
+- 2.環境變數path加入C:\msys64\ucrt64\bin
+- 3.開啟檔案後終端機輸入g++ -std=c++17 -finput-charset=UTF-8 -fexec-charset=BIG5 main.cpp Entity.cpp Organism.cpp Plant.cpp Animal.cpp Resource.cpp World.cpp -o ecosim.exe
+- 4.再輸入.\ecosim.exe
 
 ### 遊戲畫面截圖
 ---
